@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | YouTube Bulk Scheduler by Fixare Studio</title>
+    <meta name="author" content="Fixare Studio">
+    <link rel="canonical" href="https://scheduler.fixare.studio/terms.html">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            padding-top: 140px;
+            position: relative;
+        }
+
+        /* Sci-Fi HUD Background */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(0, 242, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 242, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -5;
+            pointer-events: none;
+        }
+
+        .legal-nav {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 1100px;
+            z-index: 1000;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            box-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .logo span {
+            color: var(--accent);
+            text-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .legal-content {
+            max-width: 900px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+        }
+
+        .legal-content h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 1rem;
+            color: var(--accent);
+            text-shadow: 0 0 20px var(--accent-glow);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .legal-content .last-updated {
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .legal-section {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: var(--transition);
+        }
+
+        .legal-section:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        .legal-section h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            text-shadow: 0 0 10px var(--primary-glow);
+        }
+
+        .legal-section p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+
+        .legal-section a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent);
+            transition: var(--transition);
+        }
+
+        .legal-section a:hover {
+            text-shadow: 0 0 10px var(--accent-glow);
+            border-bottom-color: transparent;
+        }
+
+        .legal-section strong {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        footer {
+            padding: 60px 0;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+            color: var(--text-secondary);
+            background: var(--bg-card);
+        }
+
+        /* HUD Corner Accents */
+        .hud-corner {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            border: 2px solid var(--accent);
+            pointer-events: none;
+            z-index: 5;
+            opacity: 0.3;
+        }
+
+        .hud-corner.top-left {
+            top: 10px;
+            left: 10px;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .hud-corner.top-right {
+            top: 10px;
+            right: 10px;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        .hud-corner.bottom-left {
+            bottom: 10px;
+            left: 10px;
+            border-right: none;
+            border-top: none;
+        }
+
+        .hud-corner.bottom-right {
+            bottom: 10px;
+            right: 10px;
+            border-left: none;
+            border-top: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HUD Corner Accents -->
+    <div class="hud-corner top-left"></div>
+    <div class="hud-corner top-right"></div>
+    <div class="hud-corner bottom-left"></div>
+    <div class="hud-corner bottom-right"></div>
+
+    <nav class="legal-nav">
+        <a href="index.html" class="logo">
+            <span>●</span> YT Bulk Scheduler
+        </a>
+        <a href="index.html" class="btn btn-outline" style="padding: 8px 20px;">Back to Home</a>
+    </nav>
+
+    <div class="legal-content">
+        <h1>Terms of Service</h1>
+        <p class="last-updated">Last Updated: January 18, 2026</p>
+
+        <div class="legal-section">
+            <h2>1. Terms</h2>
+            <p>By accessing YouTube Bulk Scheduler, you are agreeing to be bound by these
+                terms of service, all applicable laws and regulations, and agree that you are responsible for compliance
+                with any applicable local laws. If you do not agree with any of these terms, you are prohibited from
+                using or accessing this site.</p>
+
+            <h2>2. Use License</h2>
+            <p>Permission is granted to use this tool for personal or commercial video
+                scheduling on YouTube, provided you comply with YouTube's own Terms of Service. This is a license, not a
+                transfer of title.</p>
+
+            <h2>3. Disclaimer</h2>
+            <p>The materials on YouTube Bulk Scheduler are provided on an 'as is' basis. We
+                make no warranties, expressed or implied, and hereby disclaim and negate all other warranties including,
+                without limitation, implied warranties or conditions of merchantability, fitness for a particular
+                purpose, or non-infringement of intellectual property or other violation of rights.</p>
+
+            <h2>4. Limitations</h2>
+            <p>In no event shall YouTube Bulk Scheduler or its suppliers be liable for any
+                damages (including, without limitation, damages for loss of data or profit, or due to business
+                interruption) arising out of the use or inability to use the tool, even if we have been notified orally
+                or in writing of the possibility of such damage.</p>
+
+            <h2>5. Accuracy of Materials</h2>
+            <p>The materials appearing on YouTube Bulk Scheduler could include technical,
+                typographical, or photographic errors. We do not warrant that any of the materials on its website are
+                accurate, complete or current. We may make changes to the materials contained on its website at any time
+                without notice.</p>
+
+            <h2>6. YouTube Policy</h2>
+            <p>Users must comply with the <a href="https://www.youtube.com/t/terms" target="_blank">YouTube Terms of
+                    Service</a> and <a href="https://developers.google.com/youtube/terms/developer-policies"
+                    target="_blank">YouTube API Services Developer
+                    Policies</a>. Any violation of YouTube policies by the user is the sole responsibility of the user.
+            </p>
+
+            <h2>7. Service Provider</h2>
+            <p>YouTube Bulk Scheduler is provided by <strong>Fixare Studio</strong>. For more information about our
+                services,
+                visit <a href="https://fixare.studio" target="_blank">fixare.studio</a>. For support inquiries, contact
+                us at
+                <a href="mailto:info@fixare.studio">info@fixare.studio</a>.
+            </p>
+
+            <h2>8. Governing Law</h2>
+            <p>These terms and conditions are governed by and construed in accordance with applicable laws. Any disputes
+                arising from the use of this tool shall be resolved in accordance with the jurisdiction where Fixare
+                Studio operates.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            © 2026 YouTube Bulk Scheduler. A project by <a href="https://fixare.studio" target="_blank"
+                style="color: var(--accent); text-decoration: none;">Fixare Studio</a>. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+:root {
+  --primary: #ff0000;
+  --primary-hover: #cc0000;
+  --bg-dark: #0f0f0f;
+  --bg-card: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #aaaaaa;
+  --accent: #3ea6ff;
+  --accent-glow: rgba(62, 166, 255, 0.4);
+  --primary-glow: rgba(255, 0, 0, 0.4);
+  --glass: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  transition: var(--transition);
+}
+
+.glass:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Sections */
+section {
+  padding: 100px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+}
+
+.btn-outline:hover {
+  background: var(--glass);
+}
+
+/* Step Number for Technical Section */
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 20px var(--primary-glow);
+}
+
+/* Code Snippet */
+.code-snippet {
+  background: #000;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  color: #3ea6ff;
+  margin: 15px 0;
+  border-left: 3px solid var(--primary);
+  overflow-x: auto;
+}
+
+/* ===== SCI-FI HUD INTERFACE ===== */
+
+/* HUD Corner Brackets */
+.hud-corner {
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  border: 2px solid var(--accent);
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.hud-corner::before,
+.hud-corner::after {
+  content: '';
+  position: absolute;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.hud-corner::before {
+  width: 20px;
+  height: 2px;
+}
+
+.hud-corner::after {
+  width: 2px;
+  height: 20px;
+}
+
+.hud-corner.top-left {
+  top: 10px;
+  left: 10px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.hud-corner.top-left::before {
+  top: -2px;
+  left: -2px;
+}
+
+.hud-corner.top-left::after {
+  top: -2px;
+  left: -2px;
+}
+
+.hud-corner.top-right {
+  top: 10px;
+  right: 10px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.hud-corner.top-right::before {
+  top: -2px;
+  right: -2px;
+}
+
+.hud-corner.top-right::after {
+  top: -2px;
+  right: -2px;
+}
+
+.hud-corner.bottom-left {
+  bottom: 10px;
+  left: 10px;
+  border-right: none;
+  border-top: none;
+}
+
+.hud-corner.bottom-left::before {
+  bottom: -2px;
+  left: -2px;
+}
+
+.hud-corner.bottom-left::after {
+  bottom: -2px;
+  left: -2px;
+}
+
+.hud-corner.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  border-left: none;
+  border-top: none;
+}
+
+.hud-corner.bottom-right::before {
+  bottom: -2px;
+  right: -2px;
+}
+
+.hud-corner.bottom-right::after {
+  bottom: -2px;
+  right: -2px;
+}
+
+/* Animated Grid Overlay */
+.grid-overlay {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 242, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 242, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: 1;
+  pointer-events: none;
+  animation: gridPulse 4s ease-in-out infinite;
+}
+
+@keyframes gridPulse {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Scan Lines Effect */
+.scan-lines {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to bottom,
+      transparent 50%,
+      rgba(0, 242, 255, 0.02) 50%);
+  background-size: 100% 4px;
+  z-index: 2;
+  pointer-events: none;
+  animation: scanMove 8s linear infinite;
+}
+
+@keyframes scanMove {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(4px);
+  }
+}
+
+/* Side HUD Elements */
+.hud-side-left,
+.hud-side-right {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.hud-side-left {
+  left: 20px;
+}
+
+.hud-side-right {
+  right: 20px;
+}
+
+.hud-line {
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  box-shadow: 0 0 10px var(--accent-glow);
+  animation: hudLinePulse 2s ease-in-out infinite;
+}
+
+.hud-side-right .hud-line {
+  background: linear-gradient(270deg, var(--accent), transparent);
+}
+
+.hud-line:nth-child(2) {
+  animation-delay: 0.3s;
+  width: 30px;
+}
+
+.hud-line:nth-child(3) {
+  animation-delay: 0.6s;
+  width: 25px;
+}
+
+@keyframes hudLinePulse {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  section {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 20px !important;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .hud-corner {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .hud-side-left,
+  .hud-side-right {
+    display: none;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* Technical Cards */
+  .glass {
+    padding: 30px !important;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .code-snippet {
+    font-size: 0.75rem;
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+  .hud-corner {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Bulk Scheduler | Streamline Your Video Uploads by Fixare Studio</title>
+  <meta name="description"
+    content="Effortlessly automate your YouTube content strategy. Upload and schedule bulk videos from CSV files with ease. A project by Fixare Studio.">
+  <meta name="author" content="Fixare Studio">
+  <meta name="publisher" content="Fixare Studio">
+  <link rel="canonical" href="https://scheduler.fixare.studio">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="YouTube Bulk Scheduler | Streamline Your Video Uploads">
+  <meta property="og:description"
+    content="Effortlessly automate your YouTube content strategy. Upload and schedule bulk videos from CSV files with ease.">
+  <meta property="og:url" content="https://scheduler.fixare.studio">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="YouTube Bulk Scheduler by Fixare Studio">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="YouTube Bulk Scheduler | Streamline Your Video Uploads">
+  <meta name="twitter:description"
+    content="Effortlessly automate your YouTube content strategy. Upload and schedule bulk videos from CSV files with ease.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Sci-Fi HUD Corner Brackets -->
+  <div class="hud-corner top-left"></div>
+  <div class="hud-corner top-right"></div>
+  <div class="hud-corner bottom-left"></div>
+  <div class="hud-corner bottom-right"></div>
+
+  <!-- Animated Grid Overlay -->
+  <div class="grid-overlay"></div>
+
+  <!-- Scan Lines Effect -->
+  <div class="scan-lines"></div>
+
+  <!-- Side HUD Elements -->
+  <div class="hud-side-left">
+    <div class="hud-line"></div>
+    <div class="hud-line"></div>
+    <div class="hud-line"></div>
+  </div>
+  <div class="hud-side-right">
+    <div class="hud-line"></div>
+    <div class="hud-line"></div>
+    <div class="hud-line"></div>
+  </div>
+
+  <nav class="glass"
+    style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 1100px; z-index: 1000; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center;">
+    <div class="logo" style="font-weight: 800; font-size: 1.2rem; display: flex; align-items: center; gap: 10px;">
+      <span style="color: var(--primary);">●</span> YT Bulk Scheduler
+    </div>
+    <div class="nav-links" style="display: flex; gap: 30px; font-weight: 500;">
+      <a href="#features">Features</a>
+      <a href="#benefits">Benefits</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <a href="#hero" class="btn btn-primary" style="padding: 8px 20px;">Get Started</a>
+  </nav>
+
+  <section id="hero"
+    style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; overflow: hidden;">
+    <div
+      style="position: absolute; width: 500px; height: 500px; background: radial-gradient(circle, rgba(255,0,0,0.1) 0%, transparent 70%); top: -100px; right: -100px; z-index: -1;">
+    </div>
+    <div
+      style="position: absolute; width: 500px; height: 500px; background: radial-gradient(circle, rgba(62,166,255,0.05) 0%, transparent 70%); bottom: -100px; left: -100px; z-index: -1;">
+    </div>
+
+    <div class="container" style="max-width: 900px;">
+      <h1 style="font-size: clamp(3rem, 8vw, 5rem); line-height: 1.1; margin-bottom: 2rem;">
+        Bulk Video Uploads <span
+          style="background: linear-gradient(90deg, #ff0000, #ff6b6b); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Solved.</span>
+      </h1>
+      <p style="font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 3rem;">
+        The ultimate companion for content creators. Turn a folder of videos into a scheduled masterpieces with
+        a single command or CSV file.
+      </p>
+      <div style="display: flex; gap: 20px; justify-content: center;">
+        <a href="#features" class="btn btn-primary">Explore Features</a>
+        <a href="#how-it-works" class="btn btn-outline">Watch Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" style="background: rgba(255,255,255,0.02);">
+    <div class="container">
+      <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 4rem;">Powerful Features</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        <div class="glass" style="padding: 40px; border: 1px solid rgba(255,255,255,0.05);">
+          <div style="font-size: 2rem; margin-bottom: 20px;">📂</div>
+          <h3 style="margin-bottom: 15px;">Smart Folder Processing</h3>
+          <p style="color: var(--text-secondary);">Automatically scan directories and generate structured CSV
+            metadata files ready for customization.</p>
+        </div>
+        <div class="glass" style="padding: 40px; border: 1px solid rgba(255,255,255,0.05);">
+          <div style="font-size: 2rem; margin-bottom: 20px;">⏱️</div>
+          <h3 style="margin-bottom: 15px;">Automated Scheduling</h3>
+          <p style="color: var(--text-secondary);">Define precise publish times in your CSV and let the tool
+            handle the queue with YouTube v3 API.</p>
+        </div>
+        <div class="glass" style="padding: 40px; border: 1px solid rgba(255,255,255,0.05);">
+          <div style="font-size: 2rem; margin-bottom: 20px;">🛡️</div>
+          <h3 style="margin-bottom: 15px;">API Key Integration</h3>
+          <p style="color: var(--text-secondary);">Securely use your own YouTube v3 API credentials for full
+            control over your channel's uploads.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits">
+    <div class="container">
+      <div style="display: flex; align-items: center; gap: 60px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+          <h2 style="font-size: 3rem; margin-bottom: 2rem; line-height: 1.2;">Why creators love <br><span
+              style="color: var(--primary);">YT Bulk Scheduler</span></h2>
+          <ul style="list-style: none;">
+            <li style="margin-bottom: 25px; display: flex; gap: 15px;">
+              <span style="color: var(--primary); font-size: 1.5rem;">✓</span>
+              <div>
+                <h4 style="font-size: 1.2rem; margin-bottom: 5px;">Massive Time Savings</h4>
+                <p style="color: var(--text-secondary);">Upload hundreds of videos in minutes instead of
+                  hours. Stop the manual repetitive grind.</p>
+              </div>
+            </li>
+            <li style="margin-bottom: 25px; display: flex; gap: 15px;">
+              <span style="color: var(--primary); font-size: 1.5rem;">✓</span>
+              <div>
+                <h4 style="font-size: 1.2rem; margin-bottom: 5px;">Absolute Control</h4>
+                <p style="color: var(--text-secondary);">Precise control over titles, tags, and category
+                  IDs via a simple CSV interface.</p>
+              </div>
+            </li>
+            <li style="margin-bottom: 25px; display: flex; gap: 15px;">
+              <span style="color: var(--primary); font-size: 1.5rem;">✓</span>
+              <div>
+                <h4 style="font-size: 1.2rem; margin-bottom: 5px;">Local & Secure</h4>
+                <p style="color: var(--text-secondary);">Your API keys and video data never leave your
+                  computer. Privacy is built-in by design.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="glass"
+          style="flex: 1; min-width: 300px; padding: 50px; text-align: center; border: 1px solid var(--primary);">
+          <h3 style="margin-bottom: 20px; font-size: 1.5rem;">"A game changer for content farms and archival
+            channels."</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 30px;">Join thousands of creators who have
+            automated their workflow.</p>
+          <a href="#hero" class="btn btn-primary">Start Automating Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" style="background: rgba(255,255,255,0.01);">
+    <div class="container">
+      <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">Technical Deep Dive</h2>
+      <p
+        style="text-align: center; color: var(--text-secondary); margin-bottom: 4rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+        A transparent look at the two-step automation process that powers your bulk uploads.
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+        <div class="glass" style="padding: 40px;">
+          <div class="step-number">1</div>
+          <h3 style="margin-bottom: 15px;">Metadata Generation</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;">
+            Run the initial script to crawl your target video folder. It extracts raw file data and prepares
+            a structured CSV blueprint.
+          </p>
+          <div class="code-snippet">
+            $ python generate_metadata.py --folder "./my_videos"
+          </div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">
+            <strong>Output:</strong> <code>Video_data.csv</code> containing placeholders for title, tags,
+            description, and scheduling.
+          </p>
+        </div>
+
+        <div class="glass" style="padding: 40px;">
+          <div class="step-number">2</div>
+          <h3 style="margin-bottom: 15px;">Bulk API Upload</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;">
+            Once you've customized your CSV, the upload engine takes over, authenticating via OAuth 2.0 and
+            feeding each entry to YouTube.
+          </p>
+          <div class="code-snippet">
+            $ python upload.py --csv "Video_data.csv"
+          </div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">
+            <strong>Action:</strong> Sequential processing with automatic retry logic and rate-limit
+            handling.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="transparency">
+    <div class="container">
+      <div class="glass"
+        style="padding: 60px; background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,0,0,0.02) 100%);">
+        <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Security & Transparency</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+          <div>
+            <h4 style="margin-bottom: 10px; color: var(--accent);">Direct API Communication</h4>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">No middleman servers. The tool
+              communicates directly from your IP address to Google's infrastructure.</p>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 10px; color: var(--accent);">OAuth 2.0 Standard</h4>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">Uses industry-standard OAuth 2.0
+              flows. You grant permission once, and tokens are stored locally.</p>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 10px; color: var(--accent);">Open Architecture</h4>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">Every step is logged locally. You
+              can see exactly which video is being processed and its status in real-time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding: 60px 0; border-top: 1px solid var(--glass-border);">
+    <div class="container"
+      style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="color: var(--text-secondary);">
+        © 2026 YouTube Bulk Scheduler. A project by <a href="https://fixare.studio" target="_blank"
+          style="color: var(--accent); text-decoration: none;">Fixare Studio</a>
+      </div>
+      <div style="display: flex; gap: 20px;">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:info@fixare.studio">Contact Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
